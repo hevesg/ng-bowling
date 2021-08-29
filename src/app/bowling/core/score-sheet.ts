@@ -30,6 +30,9 @@ export class ScoreSheet {
     }
   }
 
+  public get frames(): Frame[] {
+    return this._frames;
+  }
   public get activeIndex() {
     return this._activeIndex;
   }

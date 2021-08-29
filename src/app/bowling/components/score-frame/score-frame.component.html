@@ -1,0 +1,8 @@
+<div class="frame">
+  <div class="attempts">
+    <div *ngFor="let attempt of frame.attempts">{{attempt}}</div>
+  </div>
+  <div class="score">
+    {{frame.score ? frame.score : ""}}
+  </div>
+</div>

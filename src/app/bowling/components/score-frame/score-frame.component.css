@@ -1,0 +1,17 @@
+:host {
+  width: 80px;
+  float: left;
+  border-right: solid 1px black;
+  display: block;
+}
+
+.attempts {
+  height: 1rem;
+}
+
+.score {
+  height: 2rem;
+  font-size: 2rem;
+  font-weight: bold;
+  text-align: center;
+}
