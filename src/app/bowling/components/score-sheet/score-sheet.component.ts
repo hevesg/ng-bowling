@@ -6,14 +6,11 @@ import {ScoreSheet} from "../../core/score-sheet";
   templateUrl: './score-sheet.component.html',
   styleUrls: ['./score-sheet.component.css']
 })
-export class ScoreSheetComponent implements OnInit {
+export class ScoreSheetComponent {
 
   @Input() public scoreSheet!: ScoreSheet;
 
   constructor() {
-  }
-
-  ngOnInit(): void {
   }
 
 }

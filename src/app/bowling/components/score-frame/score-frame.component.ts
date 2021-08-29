@@ -6,13 +6,10 @@ import {Frame} from "../../core/frame";
   templateUrl: './score-frame.component.html',
   styleUrls: ['./score-frame.component.css']
 })
-export class ScoreFrameComponent implements OnInit {
+export class ScoreFrameComponent {
 
   @Input() public frame!: Frame;
 
   constructor() { }
-
-  ngOnInit(): void {
-  }
 
 }
