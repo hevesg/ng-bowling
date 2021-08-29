@@ -25,7 +25,7 @@ export abstract class Frame {
     }
   }
 
-  protected hasPreviousFrame(): boolean {
+  public hasPreviousFrame(): boolean {
     return !!this._previousFrame;
   }
 
@@ -65,12 +65,11 @@ export abstract class Frame {
     return this._standingPins > 0;
   }
 
-  public getTotalScore(): number {
+  public get totalScore(): number {
     if (this.hasPreviousFrame()) {
-      return (this._previousFrame?.getTotalScore() ?? 0) + this._score;
+      return (this._previousFrame?.totalScore ?? 0) + this._score;
     } else {
       return this._score;
     }
   }
-
 }

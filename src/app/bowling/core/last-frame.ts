@@ -3,7 +3,7 @@ import {FrameType} from "./frame-type";
 
 export class LastFrame extends Frame {
 
-  public constructor(previous: Frame) {
+  public constructor(previous?: Frame) {
     super(previous, 3);
   }
 
@@ -22,7 +22,7 @@ export class LastFrame extends Frame {
     } else if (this._attempts.length < 2) {
       return false;
     } else {
-      this._previousFrame.finalizeScore(this);
+      this._previousFrame?.finalizeScore(this);
       this._score = this.localScore;
       this._type = FrameType.LAST;
       return true;
